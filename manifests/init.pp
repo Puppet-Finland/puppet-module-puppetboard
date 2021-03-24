@@ -194,8 +194,6 @@ class puppetboard (
 
   if $manage_virtualenv {
     class { 'python':
-      virtualenv                => 'present',
-      manage_virtualenv_package => true,
       version                   => $python_version,
       dev                       => 'present',
     }
